@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Kissanime Do Not Ad",
+  "description": "Removes iframes from kissanime",
+  "version": "1.0",
+  "permissions": [
+   "activeTab"
+   ],
+   "content_scripts": [
+     {
+      "matches": ["*://*.kissanime.ru/*"],
+      "js": ["thirdParty/jquery-3.4.1.min.js", "js.js"],
+      "run_at": "document_end"
+    }
+  ]
+
+}
